@@ -6,6 +6,18 @@ import { AppComponent } from './app.component';
 import { ViewComponent } from './view/view.component';
 import { NavComponent } from './nav/nav.component';
 import { AddComponent } from './add/add.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute: Routes=[
+  {
+    path:"",
+    component:ViewComponent
+  },
+  {
+    path:"add",
+    component:AddComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,7 +28,8 @@ import { AddComponent } from './add/add.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

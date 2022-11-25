@@ -28,7 +28,7 @@ const myRoute: Routes=[
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
     RouterModule.forRoot(myRoute)
   ],
   providers: [],

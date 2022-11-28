@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent {
-
+  userId=""
+  id=""
+  title=""
+  completed=""
+  eventAdd=()=>{
+  let data:any={ 
+    "userId": this.userId,
+    "id":this.id,
+    "title":this.title,
+    "completed":this.completed
+  }
+  console.log(data)
+}
 }
